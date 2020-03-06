@@ -23,7 +23,7 @@ class FormatPhotoToPrint
     private $cutPhoto = 'adjust'; // 'expand';
     private $dimensions;
 
-    function __construct($format = '4x6', $margin = true, $cut = 'crop')
+    function __construct($format = '4x6', $margin = true, $cut = 'adjust')
     {
         switch ($format) {
             case '4x6':
@@ -96,7 +96,7 @@ class FormatPhotoToPrint
      * @param string $format
      * @return null|string
      */
-    static function formatPhoto($source, $output, $format = '4x6', $margin = false, $cut = 'crop')
+    static function formatPhoto($source, $output, $format = '4x6', $margin = false, $cut = 'adjust')
     {
         $obj = new self($format, $margin, $cut);
         $obj->format($source);

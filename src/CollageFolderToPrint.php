@@ -12,7 +12,7 @@ use \Ast\FormatPhoto\CollagePhotoToPrint;
 class CollageFolderToPrint
 {
 
-    function __construct($format = '4x6', $cut = 'crop',$name = 'collage')
+    function __construct($format = '4x6', $cut = 'adjust',$name = 'collage')
     {
         $this->format = $format;
         $this->cutPhoto = $cut;

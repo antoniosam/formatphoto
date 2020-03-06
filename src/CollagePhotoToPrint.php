@@ -16,7 +16,7 @@ class CollagePhotoToPrint
     private $margin ;
     private $cutPhoto = 'adjust'; // 'expand';
 
-    function __construct($format = '4x6', $margin = false, $cut = 'crop')
+    function __construct($format = '4x6', $margin = false, $cut = 'adjust')
     {
         
         $this->format = $format;
